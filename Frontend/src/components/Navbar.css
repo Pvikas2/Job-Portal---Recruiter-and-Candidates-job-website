@@ -1,0 +1,61 @@
+.navbar {
+  height: 64px;
+  background: linear-gradient(135deg, #1e3c72, #2a5298);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 32px;
+  color: white;
+  animation: slideDown 0.5s ease;
+}
+
+.navbar-logo a {
+  font-size: 22px;
+  font-weight: bold;
+  color: white;
+  text-decoration: none;
+}
+
+.navbar-links a {
+  margin-left: 20px;
+  color: white;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.navbar-contact {
+  margin-left: 0px;
+  
+}
+
+.primary-btn {
+  background: white;
+  color: #2a5298 !important;
+  padding: 8px 14px;
+  border-radius: 6px;
+}
+
+.logout-btn {
+  margin-left: 20px;
+  background: #ff4d4d;
+  border: none;
+  padding: 8px 14px;
+  color: white;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.logout-btn:hover {
+  opacity: 0.9;
+}
+
+@keyframes slideDown {
+  from {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}

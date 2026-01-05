@@ -1,0 +1,185 @@
+.dashboard-container {
+  padding: 32px;
+  animation: fadeIn 0.6s ease;
+  color: black;
+}
+
+.dashboard-title {
+  font-size: 28px;
+  font-weight: bold;
+  margin-bottom: 24px;
+}
+
+.card {
+  background: white;
+  border-radius: 12px;
+  padding: 20px;
+  margin-top: 16px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
+  transition: transform 0.2s ease;
+}
+
+.card:hover {
+  transform: translateY(-3px);
+}
+
+.status {
+  margin-top: 10px;
+  font-weight: bold;
+}
+
+.status.applied {
+  color: #007bff;
+}
+
+.status.shortlisted {
+  color: #28a745;
+}
+
+.status.rejected {
+  color: #dc3545;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+
+.create-job-card {
+  background: white;
+  padding: 20px;
+  border-radius: 14px;
+  margin-top: 30px;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+}
+
+.create-job-card input,
+.create-job-card textarea,
+.create-job-card select {
+  width: 100%;
+  padding: 10px;
+  margin-top: 12px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+}
+
+.create-job-card button {
+  background: linear-gradient(135deg, #1e3c72, #2a5298);
+  padding: 12px 20px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  color: white;
+  margin-top: 16px;
+  transition: transform 0.2s ease;
+}
+
+.create-job-card button:hover {
+  transform: scale(1.02);
+  
+}
+
+.dashboard-grid {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  gap: 20px;
+}
+
+.panel {
+  background: white;
+  padding: 20px;
+  border-radius: 14px;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.08);
+}
+
+/* Existing card improved */
+.card {
+  padding: 16px;
+  border-radius: 12px;
+  margin-top: 12px;
+  background: #f4f6fb;
+  cursor: default;
+  box-shadow: 0 6px 14px rgba(0, 0, 0, 0.08);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.12);
+}
+
+/* Candidate name */
+.candidate-name {
+  font-weight: 600;
+  font-size: 16px;
+  margin-bottom: 10px;
+}
+
+/* Resume button */
+.resume-btn {
+  display: inline-block;
+  padding: 8px 14px;
+  background: #4f46e5;
+  color: #ffffff;
+  border-radius: 6px;
+  text-decoration: none;
+  font-size: 14px;
+  font-weight: 500;
+  transition: background 0.2s ease, transform 0.2s ease;
+}
+
+.resume-btn:hover {
+  background: #4338ca;
+  transform: scale(1.05);
+}
+
+/* Status row */
+.status-row {
+  margin-top: 14px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+/* Label */
+.status-row label {
+  font-size: 14px;
+  color: #555;
+}
+
+/* Dropdown */
+.status-dropdown {
+  padding: 6px 10px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  background: #ffffff;
+  font-size: 14px;
+  cursor: pointer;
+  transition: border 0.2s ease, box-shadow 0.2s ease;
+}
+
+.status-dropdown:focus {
+  outline: none;
+  border-color: #4f46e5;
+  box-shadow: 0 0 0 2px rgba(79, 70, 229, 0.2);
+}
+
+/* Active job card */
+.card.active {
+  background: #e0e7ff;
+  font-weight: bold;
+}
+
+
+.empty-text {
+  color: #777;
+  font-size: 14px;
+  margin-top: 16px;
+}
