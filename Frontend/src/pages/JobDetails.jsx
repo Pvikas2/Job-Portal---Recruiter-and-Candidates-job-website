@@ -29,6 +29,7 @@ const JobDetails = () => {
   }, [user]);
 
   if (!job) return <Loader/>
+  console.log(user);
 
   return (
     <div className="job-details-container">
