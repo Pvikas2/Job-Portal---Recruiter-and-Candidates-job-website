@@ -10,7 +10,7 @@ import ProtectedRoute from "./components/ProtectedRoute";
 import JobDetails from "./pages/JobDetails";
 import JobList from "./pages/JobList";
 import "./App.css"
-import CandidateDashboard from "./pages/CandiDateDashboard";
+import CandidateDashboard from "./pages/CandidateDashboard";
 import RecruiterDashboard from "./pages/RecruiterDashboard";
 import AdminDashboard from "./pages/AdminDashboard";
 import Contact from "./pages/Contact";
