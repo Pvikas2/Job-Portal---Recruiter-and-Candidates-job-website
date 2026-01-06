@@ -25,10 +25,9 @@
 
 .navbar-contact {
   margin-left: 0px;
-  
 }
 
-.primary-btn {
+.navbar-links .primary-btn {
   background: white;
   color: #2a5298 !important;
   padding: 8px 14px;

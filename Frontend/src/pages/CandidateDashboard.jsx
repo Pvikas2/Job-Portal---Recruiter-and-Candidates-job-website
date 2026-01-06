@@ -4,10 +4,9 @@ import { fetchMyApplications } from "../features/applications/applicationSlice";
 import Loader from "../components/Loader";
 import "./Dashboard.css";
 
-
 const CandidateDashboard = () => {
   const dispatch = useDispatch();
-  const { applications, isLoading } = useSelector(
+  const { applications = [], isLoading } = useSelector(
     (state) => state.applications
   );
 
@@ -22,7 +21,7 @@ const CandidateDashboard = () => {
 
       {applications.length === 0 && <p>No applications found.</p>}
 
-      {applications.map((app) => (
+      {applications?.map((app) => (
         <div className="card" key={app._id}>
           <h3>{app.job.title}</h3>
           <p>{app.job.location}</p>

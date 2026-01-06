@@ -1,0 +1,192 @@
+.modal-overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(0,0,0,0.6);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+}
+
+.modal-card {
+  background: #fff;
+  padding: 26px;
+  width: 420px;
+  border-radius: 16px;
+  position: relative;
+}
+
+.animate-scale {
+  animation: scaleIn 0.3s ease;
+}
+
+@keyframes scaleIn {
+  from { transform: scale(0.9); opacity: 0; }
+  to { transform: scale(1); opacity: 1; }
+}
+
+.modal-card input {
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 12px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+}
+
+.resume-box {
+  border: 2px dashed #bbb;
+  padding: 16px;
+  border-radius: 10px;
+  text-align: center;
+  margin-bottom: 14px;
+}
+
+.upload-label {
+  color: #2563eb;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.resume-success {
+  color: green;
+  font-weight: 600;
+}
+
+.resume-success button {
+  margin-left: 10px;
+  background: none;
+  color: red;
+  border: none;
+  cursor: pointer;
+}
+
+/* =========================
+   Modal Action Buttons
+   ========================= */
+
+.modal-actions {
+  display: flex;
+  justify-content: space-between;
+  gap: 14px;
+  margin-top: 22px;
+}
+
+.cancel-btn {
+  flex: 1;
+  padding: 12px 0;
+  border-radius: 10px;
+  border: 1px solid #d1d5db;
+  background: #f9fafb;
+  color: #374151;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.25s ease;
+}
+
+.cancel-btn:hover {
+  background: #e5e7eb;
+}
+
+.save-btn {
+  flex: 1;
+  padding: 12px 0;
+  border-radius: 10px;
+  border: none;
+  background: linear-gradient(135deg, #2563eb, #1d4ed8);
+  color: #ffffff;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.25s ease;
+  box-shadow: 0 8px 18px rgba(37, 99, 235, 0.35);
+}
+
+.save-btn:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 12px 22px rgba(37, 99, 235, 0.45);
+}
+
+.save-btn:disabled {
+  background: #9ca3af;
+  cursor: not-allowed;
+  box-shadow: none;
+}
+
+/* =========================
+   Resume Upload Box Enhancement
+   ========================= */
+
+.resume-box {
+  margin-top: 12px;
+  background: #f8fafc;
+}
+
+.upload-label {
+  display: inline-block;
+  margin-top: 8px;
+  padding: 10px 16px;
+  background: #eff6ff;
+  border-radius: 8px;
+  color: #1d4ed8;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.2s ease;
+}
+
+.upload-label:hover {
+  background: #dbeafe;
+}
+
+/* =========================
+   Modal Header & Close Button Polish
+   ========================= */
+
+.modal-card h2 {
+  font-size: 22px;
+  font-weight: 700;
+  color: #111827;
+  text-align:center;
+}
+
+.close-btn {
+  color: #6b7280;
+  transition: color 0.2s ease;
+}
+
+.close-btn:hover {
+  color: #111827;
+}
+
+.uploaded-file {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  max-width: 368px;
+  background: #f4f6fb;
+  padding: 8px 12px;
+  border-radius: 8px;
+}
+
+.file-name {
+  flex: 1;
+  min-width: 0;                 /* 🔥 REQUIRED */
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  font-size: 15px;
+  color: #111;
+}
+
+.remove-file {
+  cursor: pointer;
+  border: none;
+  background: transparent;
+  color: #ff4d4f;
+  font-size: 18px;
+  line-height: 1;
+  transition: transform 0.15s ease, color 0.15s ease;
+}
+
+.remove-file:hover {
+  transform: scale(1.15);
+  color: #d9363e;
+}

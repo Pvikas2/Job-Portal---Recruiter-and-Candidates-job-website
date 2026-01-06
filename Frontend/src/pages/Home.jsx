@@ -1,28 +1,9 @@
-// import { Link } from "react-router-dom";
-// import "./Home.css";
-
-// const Home = () => {
-//   return (
-//     <div className="home-container">
-//       <h1>Find Your Dream Job</h1>
-//       <p>
-//         Apply to jobs, upload resumes, and track your applications with ease.
-//       </p>
-
-//       <Link to="/jobs" className="home-btn">
-//         Browse Jobs
-//       </Link>
-//     </div>
-//   );
-// };
-
-// export default Home;
-
-
 import { Link } from "react-router-dom";
 import "./Home.css";
+import { useSelector } from "react-redux";
 
 const Home = () => {
+  const { user } = useSelector((state) => state.auth);
   return (
     <div className="home-wrapper">
 
@@ -38,9 +19,10 @@ const Home = () => {
           <Link to="/jobs" className="primary-btn">
             Browse Jobs
           </Link>
-          <Link to="/register" className="secondary-btn">
+          {!user && <Link to="/register" className="secondary-btn">
             Get Started
           </Link>
+          }
         </div>
       </section>
 
@@ -119,12 +101,12 @@ const Home = () => {
       </section>
 
       {/* FINAL CTA */}
-      <section className="cta-section">
+      { !user && <section className="cta-section">
         <h2>Start Your Career Journey Today</h2>
         <Link to="/register" className="primary-btn">
           Join HireFlow Now
         </Link>
-      </section>
+      </section>}
 
     </div>
   );
