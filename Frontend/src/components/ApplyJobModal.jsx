@@ -1,5 +1,4 @@
-import { useEffect, useState } from "react";
-import API from "../services/api";
+import { useState } from "react";
 import "./ApplyJobModal.css";
 import { updateProfile } from "../features/user/profileSlice";
 import { useDispatch } from "react-redux";

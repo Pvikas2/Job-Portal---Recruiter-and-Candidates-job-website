@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 import API from "../services/api";
 import Loader from "../components/Loader";
 import EmptyState from "../components/EmptyState";
-import ErrorMessage from "../components/ErrorMessage";
+// import ErrorMessage from "../components/ErrorMessage";
 
 
 const JobList = () => {
