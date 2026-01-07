@@ -15,12 +15,15 @@ import RecruiterDashboard from "./pages/RecruiterDashboard";
 import AdminDashboard from "./pages/AdminDashboard";
 import Contact from "./pages/Contact";
 import Footer from "./components/footer";
+import MaintenanceBanner from "./components/MaintanenceBanner";
+
 
 const App = () => {
   return (
     <div className="app-layout">
       <BrowserRouter>
         <Navbar />
+        <MaintenanceBanner />
         <main className="app-content">
           <Routes>
             {/* Public */}

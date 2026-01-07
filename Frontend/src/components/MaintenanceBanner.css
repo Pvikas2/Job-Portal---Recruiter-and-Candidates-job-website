@@ -1,0 +1,50 @@
+.maintenance-wrapper {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+  background: #ffefe0;
+  border-bottom: 1px solid #ffc107;
+  display: flex;
+  align-items: center;
+}
+
+.maintenance-marquee {
+  display: flex;
+  width: max-content;
+  animation: scroll-left 40s linear infinite;
+}
+
+.maintenance-marquee span {
+  padding-right: 50px;
+  font-weight: 600;
+  color: #b45309;
+  white-space: nowrap;
+}
+
+/* Sticky Button */
+.maintenance-btn {
+  position: sticky;
+  right: 0px;
+  padding: 8px 12px;
+  background-color: #b45309;
+  color: #fff;
+  border: none;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+  z-index: 10;
+  min-width: 300px;
+}
+
+.maintenance-btn:hover {
+  background-color: #92400e;
+}
+
+@keyframes scroll-left {
+  0% {
+    transform: translateX(100%);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
